@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+}
+
+.barra {
+    font-family: 'Lato', sans-serif;
+    width: 10%;
+    height: 9%;
+    position: fixed;
+    transition: .4s all;
+    z-index: 1;
+}
+
+/* Estilos para el círculo de la imagen */
+.circle-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.circle-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.barra ul {
+    padding: 0px;
+    text-align: center;
+}
+
+.barra li {
+    transition: all .3s;
+    list-style: none;
+}
+
+.barra a {
+    text-decoration: none;
+    font-weight: normal;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.barra h2 {
+    text-align: center;
+    color: white;
+    padding: 7px;
+    font-size: 0px;
+}
+
+.barra img {
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.barra:hover {
+    width: 70%;
+    height: 100vh;
+    background: rgba(5, 33, 51, 0.98);
+}
+
+.barra:hover h2 {
+    padding: 15px;
+    font-size: 35px;
+}
+
+.barra:hover a {
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.barra:hover img {
+    height: 0px;
+}
+
+.barra:hover li {
+    border-top: 1px solid #03121b;
+    width: 100%;
+}
+
+.barra:hover ul:last-of-type {
+    border-bottom: 1px solid #03121b;
+}
+
+.barra:hover a:hover {
+    font-size: 25px;
+    padding: 15px 0px;
+    background: rgba(23, 78, 112, 0.98);
+}
+
+@media (min-width: 768px) {
+    .barra:hover {
+        width: 60%;
+    }
+}
+
+/* Estilos para las imágenes ocultas */
+#facebookImage,
+#instagramImage,
+#twitterImage {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
