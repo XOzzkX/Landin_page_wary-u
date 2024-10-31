@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WARY-U Landing Page</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/imagenes/Logo.png" alt="Logo WARY-U">
+                <h6>WARY - U</h6>
+            </div>
+            <ul class="nav-links">
+                <li><span><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></span></li>
+                <li><span><a href="#acerca" onclick="mostrarSeccion('acerca')">Acerca de</a></span></li>
+                <li><span><a href="#testimonio" onclick="mostrarSeccion('testimonio')">Testimonio</a></span></li>
+                <li><span><a href="#contacto" onclick="mostrarSeccion('contacto')">Contáctanos</a></span></li>
+                <li><span><a href="#faq" onclick="mostrarSeccion('faq')">FAQ</a></span></li>
+            </ul>
+            <div class="download-buttons">
+                <a target="_blank" href="https://play.google.com/store/games?hl=es_419" target="_blank">
+                    <img src="assets/imagenes/Descarga1.png" alt="Descargar App - Google Play">
+                </a>
+                <a target="_blank" href="https://www.apple.com/la/app-store/" target="_blank">
+                    <img src="assets/imagenes/Descarga2.png" alt="Descargar App - App Store">
+                </a>
+            </div>
+        </nav>
+    </header><hr>
+
+    <!-- Sección principal -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="active">
+            <div class="content">
+                <h1>Mantente seguro, mantente informado: <br> <span>"tu bienestar es nuestra prioridad"</span></h1><hr><br>
+                <p>Recibe alertas en tiempo real sobre incidentes que afectan tu comunidad.<br>
+                   Reporta situaciones de riesgo y comparte información vital con tus vecinos.<br>
+                   Únete a nosotros y construyamos juntos un entorno más seguro para todos.</p>
+            </div>
+            <div class="image">
+                <img src="assets/imagenes/Pantalla.png" alt="Mapa en teléfono">
+            </div>
+        </section>
+
+        <!-- Sección Acerca de (Oculta por defecto) -->
+        <section id="acerca" style="display: none;">
+            <div class="container">
+                <h1>Acerca de Wary-u</h1>
+                <p>Wary-u es una aplicación enfocada en brindar herramientas que mejoran la seguridad y protección de las personas. A través de información en tiempo real y opciones de interacción, ayuda a los usuarios a estar más conectados y prevenidos ante posibles riesgos en su entorno.</p>
+            </div>
+        </section>
+
+        <!-- Sección Testimonio -->
+        <section id="testimonio" style="display: none;">
+            <div class="container">
+                <h1>Testimonios de Usuarios</h1>
+                <p>Aquí puedes leer experiencias de nuestros usuarios y cómo Wary-u ha mejorado su seguridad.</p>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" style="display: none;">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
+            </div>
+        </section>
+
+        <!-- Sección FAQ -->
+        <section id="faq" style="display: none;">
+            <div class="container">
+                <h1>Preguntas Frecuentes</h1>
+                <p>Aquí puedes encontrar respuestas a las preguntas más comunes sobre Wary-u.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2021 Landify UI Kit. All rights reserved</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
