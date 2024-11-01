@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="assets/imagenes/Logo.png" alt="Logo WARY-U">
+                <img src="assets/imagenes/Logo.png" alt="Logo WARY-U" title="Logo">
                 <h6>WARY - U</h6>
             </div>
             <ul class="nav-links">
@@ -30,7 +30,8 @@
                 </a>
             </div>
         </nav>
-    </header><hr>
+    </header>
+    <hr>
 
     <!-- Sección principal -->
     <main>
@@ -43,39 +44,159 @@
                    Únete a nosotros y construyamos juntos un entorno más seguro para todos.</p>
             </div>
             <div class="image">
-                <img src="assets/imagenes/Pantalla.png" alt="Mapa en teléfono">
+                <img src="assets/imagenes/Pantalla.png" alt="Mapa en teléfono"> 
             </div>
         </section>
 
-        <!-- Sección Acerca de (Oculta por defecto) -->
-        <section id="acerca" style="display: none;">
+        <!-- Sección Acerca de -->
+        <section id="acerca" class="acerca-de-section">
             <div class="container">
-                <h1>Acerca de Wary-u</h1>
+                <h1>WARY - U</h1>
                 <p>Wary-u es una aplicación enfocada en brindar herramientas que mejoran la seguridad y protección de las personas. A través de información en tiempo real y opciones de interacción, ayuda a los usuarios a estar más conectados y prevenidos ante posibles riesgos en su entorno.</p>
+
+                <br><button id="toggle-mv">Ver Misión y Visión</button>
+                <div class="mision-vision" id="mision-vision" style="display: none;">
+                    <div class="mision">
+                        <h2><img src="assets/imagenes/mision.png" alt="Misión Icon"> MISIÓN</h2>
+                        <p>La misión de nuestra aplicación es informar constantemente y detalladamente sobre acontecimientos que perturban la seguridad del entorno. Además, brindar detalles que les permitan prevenir graves daños a su bienestar cotidiano.</p>
+                    </div>
+                    <div class="vision">
+                        <h2><img src="assets/imagenes/vision.png" alt="Visión Icon"> VISIÓN</h2>
+                        <p>Ser la principal fuente de confianza de los peruanos en temas de información en tiempo real sobre eventos sociales y ambientales.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Sección Testimonio -->
-        <section id="testimonio" style="display: none;">
+        <!-- Sección Testimonios -->
+        <section id="testimonio" class="testimonio-section">
             <div class="container">
-                <h1>Testimonios de Usuarios</h1>
-                <p>Aquí puedes leer experiencias de nuestros usuarios y cómo Wary-u ha mejorado su seguridad.</p>
+                <h1>4.7 puntuación media</h1>
+                <img src="assets/imagenes/estrellas.png" alt="estrellas Icon" height="25px"><br>
+                <div class="reviews">
+                    <div class="review-card">
+                        <h2>regular experiencia</h2><br>
+                        <p>Wary-u es una herramienta innovadora y esencial que transforma la manera en que las personas se informan sobre la seguridad del entorno, pero no es muy intuitiva.</p><br>
+                        <p><strong>L.A</strong> - Lesly Alexander</p>
+                    </div>
+                    <div class="review-card">
+                        <h2>Buena experiencia</h2><br>
+                        <p>La aplicación brinda seguridad proactiva en la comunidad. La combinación de notificaciones inmediatas y el reporte de incidentes genera confianza y colaboración.</p><br>
+                        <p><strong>MC</strong> - Wilco Cuellar</p>
+                    </div>
+                    <div class="review-card">
+                        <h2>Buena experiencia</h2><br>
+                        <p>La aplicación permite estar alerta sobre incidentes cercanos y ofrece una respuesta rápida. Es como tener un asistente de seguridad personal.</p><br>
+                        <p><strong>LA</strong> - Luciano Aguirre</p>
+                    </div>
+                    <div class="review-card"><br>
+                        <h2>Buena experiencia</h2>
+                         <p>Es una aplicación que combina tecnología y facilidad de uso para mejorar la seguridad en tiempo real.</p><br>
+                        <p><strong>AM</strong> - Andrés Montes</p>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <!-- Sección Contacto -->
-        <section id="contacto" style="display: none;">
+        
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contacto-section">
             <div class="container">
-                <h1>Contáctanos</h1>
-                <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
+                <div class="imagen_contactos">
+                    <div class="imagen">
+                        <img src="assets/imagenes/imagen_contactos.png" alt="imagen_contactos">
+                        <h2>¡Síguenos!</h2>
+                    </div>
+                </div>
+                <form>
+                    <br><h1>Contáctenos</h1><br><br>
+                    <input type="text" placeholder="Email"><br>
+                    <input type="text" placeholder="Nombre"><br>
+                    <input type="text" placeholder="Dirección"><br>
+                    <textarea placeholder="Mensaje"></textarea><br><br>
+                    <button type="submit">ENVIAR</button>
+                </form>
+                <div class="social-media">
+                    <div class="icons">
+                        <a target="_blank" href="https://www.facebook.com/?locale=es_LA" >
+                            <img src="assets/imagenes/facebook.jpg" alt="facebook">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/?hl=es" >
+                            <img src="assets/imagenes/instagram.jpg" alt="instagram">
+                        </a>
+                        <a target="_blank" href="https://x.com/?lang=es" >
+                            <img src="assets/imagenes/x.jpg" alt="x">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Sección FAQ -->
         <section id="faq" style="display: none;">
             <div class="container">
-                <h1>Preguntas Frecuentes</h1>
-                <p>Aquí puedes encontrar respuestas a las preguntas más comunes sobre Wary-u.</p>
+                <h1>Preguntas Frecuentes</h1><br><br>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué es Wary-u?</button>
+                    <div class="faq-answer">
+                        <p>Wary-u es una aplicación que proporciona alertas en tiempo real sobre incidentes que ocurren en tu comunidad y te permite reportar situaciones de riesgo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo puedo reportar un incidente?</button>
+                    <div class="faq-answer">
+                        <p>Puedes reportar un incidente directamente desde la aplicación a través del botón de "Reportar", donde se te pedirá detalles como la ubicación y tipo de incidente.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo recibo notificaciones?</button>
+                    <div class="faq-answer">
+                        <p>Las notificaciones se envían a tu dispositivo móvil siempre que tengas habilitadas las alertas en la configuración de la aplicación.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿La aplicación Wary-u es gratuita?</button>
+                    <div class="faq-answer">
+                        <p>Sí, la descarga y uso de Wary-u es completamente gratuita. Sin embargo, puede haber funciones adicionales en el futuro que se ofrezcan como parte de una suscripción o compra dentro de la aplicación.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿En qué ciudades está disponible Wary-u?</button>
+                    <div class="faq-answer">
+                        <p>Actualmente, Wary-u está disponible en varias ciudades del Perú, principalmente en áreas urbanas. Estamos trabajando para expandir nuestra cobertura a más regiones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo protege Wary-u mi privacidad?</button>
+                    <div class="faq-answer">
+                        <p>Wary-u se toma muy en serio la privacidad de sus usuarios. Toda la información que compartes está encriptada, y no revelamos tu identidad al reportar incidentes. Puedes consultar nuestra política de privacidad para más detalles.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué tipo de incidentes puedo reportar?</button>
+                    <div class="faq-answer">
+                        <p>Puedes reportar una amplia variedad de incidentes, como robos, accidentes de tráfico, incendios, disturbios, y situaciones peligrosas relacionadas con fenómenos naturales, entre otros.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Puedo personalizar las alertas que recibo?</button>
+                    <div class="faq-answer">
+                        <p>Sí, dentro de la configuración de la aplicación puedes elegir el tipo de alertas que deseas recibir y personalizar la zona geográfica de la que te gustaría obtener notificaciones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué hago si tengo problemas con la aplicación?</button>
+                    <div class="faq-answer">
+                        <p>Si tienes problemas con la aplicación, puedes ponerte en contacto con nuestro equipo de soporte a través del formulario en la sección de "Contáctanos" o enviarnos un correo electrónico directamente. Estaremos encantados de ayudarte.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
