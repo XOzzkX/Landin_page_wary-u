@@ -1,48 +1,59 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Bienvenido a la Landing Page de WARY-U");
+    console.log("Bienvenido a la Landing Page de WARY-U");
+  
+    // Función para mostrar secciones
+    window.mostrarSeccion = function(seccionId) {
+        const secciones = document.querySelectorAll("main > section");
+        secciones.forEach(seccion => {
+            seccion.style.display = 'none';
+        });
+  
+        document.getElementById(seccionId).style.display = 'block';
+  
+        const links = document.querySelectorAll(".nav-links li a");
+        links.forEach(link => {
+            link.classList.remove("active");
+        });
+        document.querySelector(`.nav-links li a[href="#${seccionId}"]`).classList.add("active");
+    };
+  
+    // Inicializar la sección activa
+    mostrarSeccion('inicio'); // Esto mostrará la sección "inicio" por defecto
+  
+    const navLinks = document.querySelectorAll('.nav-links li a');
+  
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Previene la acción por defecto del enlace
+            const seccionId = this.getAttribute('href').substring(1); // Obtener el ID de la sección desde el href
+            mostrarSeccion(seccionId);
+        });
+    });
 
-  window.mostrarSeccion = function(seccionId) {
-      // Oculta todas las secciones
-      const secciones = document.querySelectorAll("main > section");
-      secciones.forEach(seccion => {
-          seccion.style.display = 'none';
-      });
+    const toggleButton = document.getElementById("toggle-mv");
+        const misionVision = document.getElementById("mision-vision");
 
-      // Muestra la sección seleccionada
-      document.getElementById(seccionId).style.display = 'block';
+        toggleButton.addEventListener("click", () => {
+            if (misionVision.style.display === "none") {
+                misionVision.style.display = "flex"; // Cambiado a flex para centrar verticalmente
+                toggleButton.innerText = "Ocultar Misión y Visión"; // Cambiar texto del botón
+            } else {
+                misionVision.style.display = "none";
+                toggleButton.innerText = "Ver Misión y Visión"; // Cambiar texto del botón
+            }
+        });
+  
+    
+})
+// Expande o colapsa la respuesta de la pregunta FAQ al hacer clic
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
 
-      // Agregar clase 'active' a la etiqueta seleccionada en el menú
-      const links = document.querySelectorAll(".nav-links li a");
-      links.forEach(link => {
-          link.classList.remove("active");
-      });
-      
-      document.querySelector(`.nav-links li a[href="#${seccionId}"]`).classList.add("active");
-  };
+        if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+    });
 });
-document.addEventListener("DOMContentLoaded", function () {
-  // Inicializar la sección activa
-  mostrarSeccion('inicio'); // Esto mostrará la sección "inicio" por defecto
-
-  const navLinks = document.querySelectorAll('.nav-links li a');
-
-  navLinks.forEach(link => {
-      link.addEventListener('click', function () {
-          // Remover clase 'active' de todos los enlaces
-          navLinks.forEach(l => l.classList.remove('active'));
-          // Agregar clase 'active' al enlace que fue clickeado
-          this.classList.add('active');
-      });
-  });
-});
-
-// Función para mostrar secciones
-function mostrarSeccion(seccion) {
-  // Aquí puedes agregar tu lógica para mostrar la sección correspondiente
-  const secciones = document.querySelectorAll('.seccion'); // Asume que tienes un contenedor para cada sección
-  secciones.forEach(s => {
-      s.style.display = 'none'; // Oculta todas las secciones
-  });
-
-  document.getElementById(seccion).style.display = 'block'; // Muestra la sección seleccionada
-}
